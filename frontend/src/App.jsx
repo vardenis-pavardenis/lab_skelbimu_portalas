@@ -2,7 +2,7 @@ import React from "react"
 
 const App = function ()
 {
-    const span = <span>Bonjour</span>
+    const span = <span>Aloha</span>
 
     return span
 }
