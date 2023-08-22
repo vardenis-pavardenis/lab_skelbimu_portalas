@@ -1,5 +1,4 @@
 import config_users from "../config/config_users.mjs"
-import model_users_count from "../models/model_users_count.mjs"
 import model_users_create from "../models/model_users_create.mjs"
 import hash_sha256_base64 from "../utils/hash_sha256_base64.mjs"
 
@@ -17,12 +16,6 @@ const controller_sign_up = async function (req, res)
         validate_inputs(
             username,
             password
-        )
-
-        // verify_that_username_is_avalable
-
-        await verify_that_username_is_avalable(
-            username
         )
 
         // compute_passwords_hash
@@ -66,22 +59,6 @@ const validate_inputs = function (
     // param_password
 
     config_users.validate_password(param_password)
-}
-
-//
-// verify_that_username_is_avalable
-//
-
-const verify_that_username_is_avalable = async function (param_username)
-{
-    const result_of_model_users_count = await model_users_count(
-        {
-            username: param_username
-        },
-        1
-    )
-
-    if (result_of_model_users_count > 0) throw new Error("username is not avalable")
 }
 
 //
