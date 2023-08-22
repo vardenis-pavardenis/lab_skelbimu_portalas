@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import App from "./App.mjs"
+import App from "./App.jsx"
 
 const element_id_root = document.getElementById("root")
 
