@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
-    "mongodb": "^5.8.0"
+    "mongodb": "^5.5.0"
+  },
+  "scripts": {
+    "start": "npm install && node main.mjs"
   }
 }

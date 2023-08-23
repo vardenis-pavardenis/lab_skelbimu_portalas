@@ -1,6 +1,6 @@
 import React from "react"
 
-export var state_alert_message
+var state_alert_message
 export var set_state_alert_message
 
 const Alert = function ()

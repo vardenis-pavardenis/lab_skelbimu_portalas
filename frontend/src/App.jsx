@@ -3,6 +3,7 @@ import Header from "./Header.jsx"
 import Page from "./Page.jsx"
 import Overlay from "./Overlay.jsx"
 import Alert from "./Alert.jsx"
+import Skelbimas from "./Skelbimas/Skelbimas.jsx"
 
 const App = function ()
 {
@@ -10,6 +11,8 @@ const App = function ()
         <Header></Header>
 
         <Page></Page>
+
+        <Skelbimas></Skelbimas>
 
         <Overlay></Overlay>
 

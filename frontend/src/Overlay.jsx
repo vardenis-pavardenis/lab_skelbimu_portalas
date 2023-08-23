@@ -1,6 +1,6 @@
 import React from "react"
 
-export var state_overlay_message
+var state_overlay_message
 export var set_state_overlay_message
 
 const Overlay = function ()
@@ -31,6 +31,7 @@ const Overlay = function ()
                 {
                     width: "fit-content",
                     fontWeight: "bold",
+                    
                     position: "absolute",
                     top: "50%",
                     left: "50%",
